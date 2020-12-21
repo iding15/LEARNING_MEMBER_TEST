@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19</title>
+</head>
+<body>
+    <h1>코로나 확진자 수 현황</h1>
+    <div>
+
+    </div>
+    <div>
+        <form method="get" action="/results.html">
+            <p>날짜 선택: 
+                <input type="text" name="firstdate" value="yyyymmdd">~<input type="text" name="lastdate" value="yyyymmdd">
+            </p>
+            <div>
+                <label><input type="checkbox" name="decidecnt" value="확진자 수" checked>확진자 수</label>
+                <label><input type="checkbox" name="deathcnt" value="사망자 수">사망자 수</label>
+                <label><input type="checkbox" name="carecnt" value="치료중 환자 수">치료중 환자 수</label>
+                <label><input type="checkbox" name="clearcnt" value="격리해제 수">격리해제 수</label>
+                <label><input type="checkbox" name="examcnt" value="검사진행 수">검사진행 수</label>
+                <label><input type="checkbox" name="accexamcnt" value="누적 검사 수">누적 검사 수</label>
+                <label><input type="checkbox" name="accexamcompcnt" value="누적 검사 완료 수">누적 검사 완료 수</label>
+                <label><input type="checkbox" name="accdefrate" value="누적 확진률">누적 확진률</label>
+                <p><input type="submit" value="확인"></p>
+            </div>
+        </form>
+    </div>
+    <div>
+
+    </div>
+</body>
+</html>
